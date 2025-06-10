@@ -15,4 +15,8 @@
       <Folder Include="Specifications\Operators\" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\PostApp.Enums\PostApp.Enums.csproj" />
+    </ItemGroup>
+
 </Project>

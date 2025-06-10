@@ -11,4 +11,6 @@ public class User : BaseEnity
     public string Email { get; set; }
     
     public string City { get; set; }
+    
+    public ICollection<Post> Posts { get; set; } = new List<Post>();
 }

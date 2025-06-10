@@ -14,6 +14,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostApp.Common", "PostApp.C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostApp.ConsoleApplication", "PostApp.ConsoleApplication\PostApp.ConsoleApplication.csproj", "{D29D2F6E-3D17-42DB-B6FF-8D0BE5D9598D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostApp.Enums", "PostApp.Enums\PostApp.Enums.csproj", "{917EF0E5-F7A5-44C7-9478-CE245EE0D3F1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,5 +50,9 @@ Global
 		{D29D2F6E-3D17-42DB-B6FF-8D0BE5D9598D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D29D2F6E-3D17-42DB-B6FF-8D0BE5D9598D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D29D2F6E-3D17-42DB-B6FF-8D0BE5D9598D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{917EF0E5-F7A5-44C7-9478-CE245EE0D3F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{917EF0E5-F7A5-44C7-9478-CE245EE0D3F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{917EF0E5-F7A5-44C7-9478-CE245EE0D3F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{917EF0E5-F7A5-44C7-9478-CE245EE0D3F1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

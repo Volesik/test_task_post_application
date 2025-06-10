@@ -6,9 +6,4 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
-    <ItemGroup>
-      <ProjectReference Include="..\PostApp.DL.EntityFramework\PostApp.DL.EntityFramework.csproj" />
-      <ProjectReference Include="..\PostApp.DL\PostApp.DL.csproj" />
-    </ItemGroup>
-
 </Project>

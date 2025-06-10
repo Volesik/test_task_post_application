@@ -4,11 +4,11 @@ using PostApp.DL.Abstraction.Specifications;
 
 namespace PostApp.DL.Specifications.User;
 
-public class SearchUserInfoByFullName : Specification<EntityFramework.Models.User>
+public class SearchUserInfoByCity : Specification<EntityFramework.Models.User>
 {
     private readonly string? _cityName;
 
-    public SearchUserInfoByFullName(string? cityName)
+    public SearchUserInfoByCity(string? cityName)
     {
         _cityName = cityName;
     }
