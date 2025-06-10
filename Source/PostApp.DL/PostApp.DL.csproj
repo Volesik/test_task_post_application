@@ -6,4 +6,13 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\PostApp.DL.Abstraction\PostApp.DL.Abstraction.csproj" />
+      <ProjectReference Include="..\PostApp.DL.EntityFramework\PostApp.DL.EntityFramework.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="Specifications.cs" />
+    </ItemGroup>
+
 </Project>
