@@ -7,7 +7,18 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="FaceIT.Hangfire.Tags" Version="1.9.0" />
+        <PackageReference Include="Hangfire.AspNetCore" Version="1.8.20" />
+        <PackageReference Include="Hangfire.Core" Version="1.8.20" />
+        <PackageReference Include="Hangfire.PostgreSql" Version="1.20.12" />
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\PostApp.BL\PostApp.BL.csproj" />
+      <ProjectReference Include="..\PostApp.Common\PostApp.Common.csproj" />
+      <ProjectReference Include="..\PostApp.DL.EntityFramework\PostApp.DL.EntityFramework.csproj" />
+      <ProjectReference Include="..\PostApp.Web.Common\PostApp.Web.Common.csproj" />
     </ItemGroup>
 
 </Project>
