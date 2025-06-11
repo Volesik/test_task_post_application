@@ -4,6 +4,6 @@ services:
     environment:
       POSTGRES_USER: test
       POSTGRES_PASSWORD: test
-      POSTGRES_DATABASE: postApp
+      POSTGRES_DATABASE: test
     ports:
       - '2345:5432'
