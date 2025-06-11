@@ -5,9 +5,9 @@ namespace PostApp.Web.Common.HttpClients;
 
 public interface IDataServiceApiClient
 {
-    [Post("/users")]
+    [Get("/users")]
     Task<UserResponseModel[]> GetUsersAsync();
     
-    [Post("/posts")]
+    [Get("/posts")]
     Task<PostResponseModel[]> GetPostsAsync();
 }
