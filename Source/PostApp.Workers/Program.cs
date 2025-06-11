@@ -39,24 +39,18 @@ builder.Services.AddDbContext<PostAppContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddWebCommonServices(builder.Configuration);
-builder.Services.AddScoped<PostMapper>();
-builder.Services.AddScoped<UserMapper>();
 builder.Services.AddScoped(typeof(IDatabaseContextRepository<>), typeof(DatabaseContextRepository<>));
 builder.Services.AddScoped<IDatabaseContextRepository, DatabaseContextRepository>();
 builder.Services.AddTransient<IStartupFilter, MigrationStartupFilter<PostAppContext>>();
 
+builder.Services.AddScoped<PostMapper>();
+builder.Services.AddScoped<UserMapper>();
 builder.Services.AddScoped<IUserInfoService, UserInfoService>();
 builder.Services.AddScoped<IPostService, PostService>();
-
-builder.Services.AddControllers();
 
 var app = builder.Build();
 
 app.UseHangfireDashboard();
-
-app.UseAuthorization();
-
-app.MapControllers();
 app.MapHangfireDashboard();
 app.RegisterRecurringJobs();
 app.Run();
