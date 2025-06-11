@@ -1,0 +1,9 @@
+services:
+  postApp.Database:
+    image: postgres:16.4-alpine
+    environment:
+      POSTGRES_USER: test
+      POSTGRES_PASSWORD: test
+      POSTGRES_DATABASE: postApp
+    ports:
+      - '2345:5432'
