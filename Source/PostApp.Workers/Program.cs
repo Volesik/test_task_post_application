@@ -9,6 +9,8 @@ using PostApp.DL.Interfaces;
 using PostApp.DL.Repositories;
 using PostApp.Web.Common.Extensions;
 using PostApp.Workers.Extensions;
+using PostApp.Workers.Filters;
+using PostApp.Workers.Mapper;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -39,6 +41,7 @@ builder.Services.AddDbContext<PostAppContext>(options =>
 builder.Services.AddWebCommonServices(builder.Configuration);
 builder.Services.AddScoped(typeof(IDatabaseContextRepository<>), typeof(DatabaseContextRepository<>));
 builder.Services.AddScoped<IDatabaseContextRepository, DatabaseContextRepository>();
+builder.Services.AddTransient<IStartupFilter, MigrationStartupFilter<PostAppContext>>();
 
 builder.Services.AddScoped<IUserInfoService, UserInfoService>();
 builder.Services.AddScoped<IPostService, PostService>();
